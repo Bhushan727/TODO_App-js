@@ -34,7 +34,10 @@ function addCard(cardName)
         </div>
     `;
     card.insertAdjacentHTML('beforeend',html);
+
+    
     console.log(card);
+    console.log(card.childNodes[1].innerText);
 
     const deleteBtn = document.createElement('div');
     deleteBtn.setAttribute('class','trashIcn');
@@ -121,7 +124,51 @@ function addCard(cardName)
     })
 
 
+    
+    const heading = card.childNodes[1];
+    heading.addEventListener('click',function(){
+        const secondPage = document.createElement('div');
+        secondPage.classList.add('secondPage');
 
+        secondPage.innerHTML = `
+            <div class="secondHead">
+            <div class="backBtn"><i class="fa-solid fa-circle-left"></i><span> Back</span>
+            </div>
+            <p class="headName">
+                some Text
+            </p>
+            <div class="secondPlus">
+                <i class="fa-solid fa-square-plus"></i>
+            </div>
+            </div>
+            <div class="secondContainer"></div>
+        `;
+        
+        console.log(secondPage.children[1]);
+
+        const innerCardName = secondPage.children[0].children[1];
+        innerCardName.innerText = cardName;
+
+        const secondContainer = secondPage.children[1];
+        secondContainer.append(card);
+
+        document.body.append(secondPage);
+
+        console.log(card);
+
+        console.log(secondPage.children[0].children[0]);
+
+        const backBtn = secondPage.children[0].children[0];
+        backBtn.addEventListener('click',function(){
+            if(secondContainer.innerHTML !=="")
+            {
+                containerDiv.insertAdjacentElement("afterbegin",card);
+            }
+            console.log(secondContainer);
+            secondPage.remove();
+        })
+        
+    })
     
 
     // const dark = document.createElement('div');
