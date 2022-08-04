@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#000000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.head{
+    width: 85%;
+    height: 20vh;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+        
+}
+
+.bTitle{
+    font-weight: 600;
+}
+#plusIcon{
+    color: #000fff;
+}
+
+#addBtn:hover{
+    cursor: pointer;
+}
+
+
+
+.container{
+    width: 85%;
+    min-height: 80vh;
+    margin: auto;
+    
+    padding: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 20px;
+    
+}
+
+#noItem{
+    font-size: 30px;
+}
+
+.cards{
+    width: 20%;
+    height: 350px;
+   position: relative;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000000;
+    
+}
+
+.cardHead{
+    width: 100%;
+    height:15%;
+    border-bottom: 1px solid black;
+    color: crimson;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    text-align: center;
+}
+.cardHead:hover{
+    cursor: pointer;
+}
+
+.cards i{
+   
+    font-size: 25px;
+   
+}
+
+.carCont{
+    
+    width: 100%;
+    height: 85%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.trashIcn
+{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: red;
+    font-size: 23px;
+    cursor: pointer;
+}
+.addIcn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.mainBlur{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.pop{
+    width: 550px;
+    height: 300px;
+    background-color: #fff;
+    color: crimson;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'montserrat',sans-serif;
+    
+}
+.mainBlur2{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* .pop2{
+    width: 550px;
+    height: 300px;
+    background-color: #fff;
+    color: crimson;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'montserrat',sans-serif;
+    
+} */
+.pop i{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 25px;
+    color: red;
+}
+i:hover{
+    cursor: pointer;
+}
+.pop input{
+    display: block;
+   margin:20px auto;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.pop button{
+    width: 120px;
+    height: 40px;
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+    font-size: 20px;
+}
+.pop button:hover{
+    cursor: pointer;
+}
+
+
+
+
+.markDone
+{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: crimson;
+    padding: 3px 8px;
+    margin-left: 10px;
+}
+.markDone:hover{
+    cursor: pointer;
+}
+
+.missions{
+    margin-top: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;450;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    
+</head>
+<body>
+    
+    <section class="head">
+
+        <div class="title">
+            <span class="bTitle">Tasks</span> List
+
+        </div>
+        <div id="addBtn" onclick="showPop()">
+            <i class="fa-solid fa-circle-plus" id="plusIcon"></i>
+            Add Item
+        </div>
+
+    </section>
+
+    <div class="mainBlur">
+        <div class="pop">
+            <h1>Add New List</h1>
+            <i class="fa-solid fa-circle-xmark" id="closePop"></i>
+            <input type="text" id="name" value="">
+            <button class="addList" onclick="addTask()">Add</button>
+            
+        </div>
+    </div>
+
+
+    <template>
+        <div class="mainBlur2">
+            <div class="pop">
+                <h1>Add Task</h1>
+                <i class="fa-solid fa-circle-xmark" id="closePop2"></i>
+                <input type="text" id="listName" value="">
+                <button class="addList" id="addRoutine">AddL</button>
+                
+            </div>
+        </div>s
+    
+    </template>
+    <div class="container" id="containerId">
+        <div id="noItem">No Item in the Todo List</div>
+    <template>
+        <div class="cards">
+
+                <div class="cardHead">
+                     some Text
+                </div>
+                <div class="carCont">
+                    <ul class="items" type="none">
+                        <li class="missions">Sleeping <button class="markDone">Done</button></li>
+                    </ul>
+
+                    <div class="trashIcn"><i class="fa-solid fa-trash-can"></i></div>
+                     <div class="addIcn"><i class="fa-solid fa-circle-plus"></i></div>
+                </div>
+         </div>
+    </template>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
